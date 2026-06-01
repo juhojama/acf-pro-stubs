@@ -17,7 +17,7 @@ namespace {
          *
          * @var string
          */
-        public $version = '6.3.10';
+        public $version = '6.3.11';
         /**
          * The plugin settings array.
          *
@@ -15271,29 +15271,6 @@ namespace {
     }
 }
 namespace {
-    /**
-     * The main function responsible for returning the acf_updates singleton.
-     * Use this function like you would a global variable, except without needing to declare the global.
-     *
-     * Example: <?php $acf_updates = acf_updates(); ?>
-     *
-     * @since   5.5.12
-     *
-     * @return ACF\Updater The singleton instance of Updater.
-     */
-    function acf_updates()
-    {
-    }
-    /**
-     * Alias of acf_updates()->add_plugin().
-     *
-     * @since   5.5.10
-     *
-     * @param   array $plugin Plugin data array.
-     */
-    function acf_register_plugin_update($plugin)
-    {
-    }
     /**
      * An ACF specific getter to replace `home_url` in our license checks to ensure we can avoid third party filters.
      *
